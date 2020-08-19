@@ -1,20 +1,25 @@
 title: PRESTIGIO
-description: >-
-  Em caso de pane do veículo acionando o SOS no celular ativar sistema de
-  atendimento e enviar socorro para o local que o veículo se encontra o qual já
-  estará integrado ao sistema GPS. e os dados do veículo e condutor já estará
-  inserido no sistema.
+description: largarta
 template:
-  repo: prestigio-template
-  name: prestigio
+  repo: PRESTIGIO
+  name: PRESTIGIO
+  description: largarta
 before:
   - type: createIssue
     title: Welcome!
     body: new-issue.md
+  - type: assignRegistrant
 steps:
-  - title: First step
-    description: The first step in your course
+  - title: busca
+    description: largarta
     event: issues.assigned
-    link: '{{ repoUrl }}'
+    link: fotos
     actions:
       - type: closeIssue
+      - type: createPullRequest
+    video: golgle
+  - title: New step
+    actions:
+      - type: createIssue
+        title: A new issue
+        body: a-response-file.md
